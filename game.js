@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const imageNames = ['tori', 'kinoko', 'saboten','moai'];
-/*const btn = document.getElementById('btn');*/
+const onclickArea = document.getElementById('onclick-area');//buttonをタップするため
 
 
 
@@ -182,9 +182,9 @@ function hitCheck() {
 }
 
 document.onkeydown = function(e) {
-    if(e.key ===' '&& game.state === 'init'){
+    /*if(e.key ===' '&& game.state === 'init'){
         StaticRange();
-    }
+    }*/
     //if(e.key === ' ' && game.tori.moveY === 0) {
     if (e.key ===' '){
         game.tori.moveY = -20;
@@ -194,9 +194,9 @@ document.onkeydown = function(e) {
     }*/
 };
 
-/*btn.addEventListener('touched',function(){
+document.body.onclick = function(){
     game.tori.moveY = -20;
-},false);*/
+}
 
 
 
