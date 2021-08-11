@@ -189,6 +189,8 @@ document.onkeydown = function(e) {
     /*if(e.key === 'Enter' && game.isGameOver === true) {
               init();
     }*/
+     if(canvas.addEventListener('touched')){
+        game.tori.moveY = -20;
+    }
 };
 
-document.body.onclick = document.onkeydown;
