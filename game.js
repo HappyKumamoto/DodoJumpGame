@@ -1,10 +1,8 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const imageNames = ['tori', 'kinoko', 'saboten','moai'];
-const btn = document.getElementById('btn');
-btn.addEventListener('touched',function(){
-    game.tori.moveY = -20;
-},false);
+/*const btn = document.getElementById('btn');*/
+
 
 
 // グローバルな game オブジェクト
@@ -194,18 +192,9 @@ document.onkeydown = function(e) {
     /*if(e.key === 'Enter' && game.isGameOver === true) {
               init();
     }*/
-     /*if(canvas.addEventListener('touched')){
-        game.tori.moveY = -20;
-    }*/
 };
 
-/*canvas.addEventListener('touched',false);
-function touched(){
-    game.tori.moveY = -20;
-};*/
-
-/*const btn = document.getElementById('btn');
-btn.addEventListener('touched',function(){
+/*btn.addEventListener('touched',function(){
     game.tori.moveY = -20;
 },false);*/
 
