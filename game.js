@@ -189,8 +189,14 @@ document.onkeydown = function(e) {
     /*if(e.key === 'Enter' && game.isGameOver === true) {
               init();
     }*/
-     if(canvas.addEventListener('touched')){
+     /*if(canvas.addEventListener('touched')){
         game.tori.moveY = -20;
-    }
+    }*/
 };
 
+/*document.getElementById('canvas').addEventLintener('touchstart');*/
+document.getElementById('canvas').addEventListener('touched');
+
+function touched(){
+    game.tori.moveY = -20;
+};
