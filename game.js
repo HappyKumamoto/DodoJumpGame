@@ -195,8 +195,11 @@ document.onkeydown = function(e) {
 };
 
 /*document.getElementById('canvas').addEventLintener('touchstart');*/
-document.getElementById('canvas').addEventListener('touched');
-
+/*document.getElementById('canvas').addEventListener('touched');*/
+/*document.getElementById('canvas').addEventLintener('touchstart');*/
+canvas.addEventListener('touched',false);
 function touched(){
     game.tori.moveY = -20;
 };
+
+
