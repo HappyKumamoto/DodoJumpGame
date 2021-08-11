@@ -1,6 +1,11 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const imageNames = ['tori', 'kinoko', 'saboten','moai'];
+const btn = document.getElementById('btn');
+btn.addEventListener('touched',function(){
+    game.tori.moveY = -20;
+},false);
+
 
 // グローバルな game オブジェクト
 const game = {
@@ -199,10 +204,10 @@ function touched(){
     game.tori.moveY = -20;
 };*/
 
-const btn = document.getElementById('btn');
+/*const btn = document.getElementById('btn');
 btn.addEventListener('touched',function(){
     game.tori.moveY = -20;
-},false);
+},false);*/
 
 
 
