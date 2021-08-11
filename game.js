@@ -194,12 +194,15 @@ document.onkeydown = function(e) {
     }*/
 };
 
-/*document.getElementById('canvas').addEventLintener('touchstart');*/
-/*document.getElementById('canvas').addEventListener('touched');*/
-/*document.getElementById('canvas').addEventLintener('touchstart');*/
-canvas.addEventListener('touched',false);
+/*canvas.addEventListener('touched',false);
 function touched(){
     game.tori.moveY = -20;
-};
+};*/
+
+const btn = document.getElementById('btn');
+btn.addEventListener('touched',function(){
+    game.tori.moveY = -20;
+},false);
+
 
 
