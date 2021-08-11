@@ -190,3 +190,5 @@ document.onkeydown = function(e) {
               init();
     }*/
 };
+
+document.body.onclick = document.onkeydown;
