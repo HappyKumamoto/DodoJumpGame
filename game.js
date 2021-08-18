@@ -174,9 +174,8 @@ function hitCheck() {
             Math.abs(game.tori.y - enemy.y) < game.tori.height * 0.5 / 2 + enemy.height * 0.5 / 2
         ) {
             game.isGameOver = true;
-            ctx.font = '45px Helvetica, Arial, sans-serif ';
-            ctx.fillText(`＼エンター または リロードで／
-            ＼再スタート／`, 150, 200);
+            ctx.font = '25px Helvetica, Arial, sans-serif ';
+            ctx.fillText(`＼エンター または リロードで再スタート／`, 150, 200);
             clearInterval(game.timer);
         }
     }
