@@ -189,14 +189,20 @@ document.onkeydown = function(e) {
     if (e.key ===' '){
         game.tori.moveY = -20;
     }
-    /*if(e.key === 'Enter' && game.isGameOver === true) {
+    if(e.key === 'Enter' && game.isGameOver === true) {
               init();
-    }*/
+    }
 };
 
 document.body.onclick = function(){
+    if(onclickArea === 'touched' && game.isGameObr === true){
+        init();
+    }
+    else{
     game.tori.moveY = -20;
+    }
 }
+
 
 
 
