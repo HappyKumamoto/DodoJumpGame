@@ -195,7 +195,7 @@ document.onkeydown = function(e) {
 };
 
 document.body.onclick = function(){
-    if(onclickArea === 'touched' && game.isGameObr === true){
+    if(onclickArea === 'touched' && game.isGameOver === true){
         init();
     }
     else{
