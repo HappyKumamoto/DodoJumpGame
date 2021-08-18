@@ -175,7 +175,8 @@ function hitCheck() {
         ) {
             game.isGameOver = true;
             ctx.font = '45px Helvetica, Arial, sans-serif ';
-            ctx.fillText(`＼エンター または リロードで再スタート／`, 150, 200);
+            ctx.fillText(`＼エンター または リロードで／
+            ＼再スタート／`, 150, 200);
             clearInterval(game.timer);
         }
     }
