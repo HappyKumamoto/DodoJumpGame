@@ -3,11 +3,6 @@ const ctx = canvas.getContext('2d');
 const imageNames = ['tori', 'kinoko', 'saboten','moai'];
 const onclickArea = document.getElementById('onclick-area');//buttonをタップするため
 
-let canvas_w = window.innerWidth;//画面を全部使う
-let canvas_h = window.innerHeight;
-
-
-
 // グローバルな game オブジェクト
 const game = {
     counter: 0,
