@@ -3,9 +3,8 @@ body{
     color:beige;
     background-image:linear-gradient( 
         #99CCCD 50%,rgb(240,255,240)80%,#FFCC00 90%
-    ) ;
-  
-    /* background-color: rgb(159, 207, 191);  */
+    );
+    /*background-color: rgb(159, 207, 191);*/  
     font-family: Helvetica, Arial, sans-serif;
     overflow:hidden;
 }
@@ -18,3 +17,11 @@ button{
     padding: 2px 5px;
     font-size: 32px;
 }
+/* .contents{ 
+    width:100%;
+    height:100%;
+}*/
+/*#canvas{
+    width: 30%;
+    height: 30%;
+}*/
