@@ -5,7 +5,10 @@ body{
 /*        rgb(159, 207, 191)50%,rgb(240,255,240)80%,#FFCC00 90%  */
         #99CCCD 50%,rgb(240,255,240)80%,#FFCC00 90%
     ) ;
+  
     background-repeat: no-repeat;
+    background-size: 1000px 650px;
+    background-position: center top 15px;
     /* background-color: rgb(159, 207, 191);  */
     font-family: Helvetica, Arial, sans-serif;
     overflow:hidden;
