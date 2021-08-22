@@ -7,13 +7,17 @@ const onclickArea = document.getElementById('onclick-area');
 // グローバルな game オブジェクト(グローバル変数)
 const game = {
     counter: 0,//何フレーム経過したか
-    //bgm: new Audio('bgm/jump.mp3'),
+
+    bgm2: new Audio('bgm/jump.mp3'),
+    bgm3: new Audio('bgm/touch.mp3'),
+
     enemys: [],//敵キャラクター
     image: {},//どれも最初は空っぽ
     isGameOver: true,
     score: 0,
     timer: null//切り替えタイマー
 };
+
 
 // 複数画像読み込み
 let imageLoadCounter = 0;//最初は完了していない
@@ -176,20 +180,24 @@ function hitCheck() {
             ctx.font = '25px Helvetica, Arial, sans-serif ';
             ctx.fillText(`＼エンター または リロードで再スタート／`, 150, 200);
             clearInterval(game.timer);//動きが止まる
+            game.bgm3.play();//touchのbgmを鳴らす
         }
     }
 }
 
 
 document.onkeydown = function(e) {
-    /*if(e.key ===' '&& game.state === 'init'){
-        StaticRange();
-    }*/
+    if( e.key ===' ' && game.state === 'init'){
+        Start();
+    }
     //if(e.key === ' ' && game.tori.moveY === 0) {
     if (e.key ===' '){
-        game.tori.moveY = -20;
+        game.tori.moveY = -20;//ひと押しで20飛び上がる
+        game.bgm2.play();//jumpのbgmを鳴らす
     }
+    
     if(e.key === 'Enter' && game.isGameOver === true) {
+     //if(e.key === 'Enter' && game.state === 'gameover') {
               init();
     }
 };
