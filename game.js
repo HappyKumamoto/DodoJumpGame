@@ -8,7 +8,7 @@ const onclickArea = document.getElementById('onclick-area');
 const game = {
     counter: 0,//何フレーム経過したか
 
-    bgm2: new Audio('bgm/awa.mp3'),
+    bgm2: new Audio('bgm/pyott.mp3'),
     bgm3: new Audio('bgm/chan.mp3'),
 
     enemys: [],//敵キャラクター
